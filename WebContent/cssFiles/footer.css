@@ -1,0 +1,39 @@
+@CHARSET "ISO-8859-1";
+#footer {
+	margin-top: 350px;
+	width: 100%;
+	height: 50px;
+	background-color: #A0A0A0;
+	overflow: hidden;
+}
+#smallFooter {
+	width: 60%;
+	height: 30px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 10px;
+	background-color: black;
+	box-shadow: 0px 0px 15px 8px #FFFF99;
+	color: #E0E0E0;
+}
+.left {
+		float: left;
+		margin-top: 5px;
+		margin-left: 10px;
+}
+.right {
+	float: right;
+	margin-top: 5px;
+}
+.socialNetworkIcons {
+	margin-right: 15px;
+}
+@media only screen and (max-device-width: 900px) {
+	#footer {
+		margin-top: 1000px;
+		width: 100%;
+		height: 50px;
+		background-color: #A0A0A0;
+		overflow: hidden;
+	}
+}

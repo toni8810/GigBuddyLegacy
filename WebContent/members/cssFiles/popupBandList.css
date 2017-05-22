@@ -1,0 +1,34 @@
+@CHARSET "ISO-8859-1";
+#list8 {
+	display: none;
+	z-index: 100;
+	width: 335px;
+	position: relative;
+	right: 0;
+	top: 50px;
+}
+#list8 ul {
+	list-style:none;
+	margin-top: 0;
+	margin-left: auto;
+	margin-right: auto;
+	width: 335px;
+	padding:0;
+	height: 280px;
+	overflow: auto;
+}
+#list8 ul li { 
+	font-family:Georgia,serif,Times;
+	font-size:18px;
+	margin: 0;
+}
+#list8 ul li a { 
+	display:block; width:300px; height:28px; background-color:#333; border-left:5px solid #222; border-right:5px solid #222; padding-left:10px;
+  	text-decoration:none; color:#bfe1f1; 
+}
+#list8 ul li a:hover { 
+	-moz-transform:rotate(-5deg); -moz-box-shadow:10px 10px 20px #000000;
+  	-webkit-transform:rotate(-5deg); -webkit-box-shadow:10px 10px 20px #000000;
+  	transform:rotate(-3deg); box-shadow:10px 10px 20px #000000;
+  	cursor: pointer;
+}

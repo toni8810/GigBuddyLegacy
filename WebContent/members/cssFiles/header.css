@@ -1,0 +1,406 @@
+@CHARSET "ISO-8859-1";
+@font-face {
+  font-family: 'HighlandGothicFLFRegular';
+  src: url('fonts/HighlandGothicFLF.eot');
+  src: local('HighlandGothicFLF Regular'), local('HighlandGothicFLF'), url('fonts/HighlandGothicFLF.ttf') format('truetype');
+}
+#messageBox {
+	float:right;
+	margin-right: 70px;
+	margin-top: 5px;
+}
+#numOfMessage {
+	/* [ Botton ] */
+	position:relative;
+	bottom: 30px;
+	left: 80px;
+	height:40px;
+	width:40px;
+	cursor:pointer;
+	line-height:47px;
+	background-color:#f1f1f1;
+	text-align:center;
+	font-size:30px;
+	display:inline-block;
+	text-shadow:0px -1px 1px rgba(255,255,255,0.5);
+	color:#444;
+	/* Transitions */
+	-moz-transition:.1s ease-out;
+	-webkit-transition:.1s ease-out;
+	-o-transition:.1s ease-out;
+	-ms-transition:.1s ease-out;
+	-khtml-transition:.1s ease-out;
+	transition:.1s ease-out;
+	/* Shadows */
+	box-shadow:inset 0 0 5px 0 rgba(255,255,255,0.5);
+	-moz-box-shadow:inset 0 0 5px 0 rgba(255,255,255,0.5);
+	-ms-box-shadow:inset 0 0 5px 0 rgba(255,255,255,0.5);
+	-webkit-box-shadow:inset 0 0 5px 0 rgba(255,255,255,0.5);
+	-khtml-box-shadow:inset 0 0 5px 0 rgba(255,255,255,0.5);
+	-o-box-shadow:inset 0 0 5px 0 rgba(255,255,255,0.5);
+	/* Borders */
+	border-width:1px;
+	border-style:solid;
+	border-left-color:#777;
+	border-right-color:#777;
+	border-top-color:#999;
+	border-bottom:4px solid #555;
+	/* {{ No selectable }} */
+	user-select:none;
+	-moz-user-select:none;
+	-webkit-user-select:none;
+	-o-user-select:none;
+	-ms-user-select:none;
+	-khtml-user-select:none;
+	/*[{- Border radius -}]*/
+	border-radius:50px;
+	-moz-border-radius:50px;
+	-webkit-border-radius:50px;
+	-ms-border-radius:50px;
+	-khtml-border-radius:50px;
+	-o-border-radius:50px;
+	/* Gradient */
+	background-image:-moz-linear-gradient(top,transparent,rgba(0,0,0,0.2));
+	background-image:-webkit-linear-gradient(top,transparent,rgba(0,0,0,0.2));
+	background-image:-o-linear-gradient(top,transparent,rgba(0,0,0,0.2));
+	background-image:-khtml-linear-gradient(top,transparent,rgba(0,0,0,0.2));
+	background-image:-ms-linear-gradient(top,transparent,rgba(0,0,0,0.2));
+	background-image:linear-gradient(top,transparent,rgba(0,0,0,0.2));
+}
+#numOfMessage:hover{
+	color:#333;
+	/*{Gradient}*/
+	background-image:-moz-linear-gradient(top,transparent,rgba(0,0,0,0.17));
+	background-image:-webkit-linear-gradient(top,transparent,rgba(0,0,0,0.17));
+	background-image:-ms-linear-gradient(top,transparent,rgba(0,0,0,0.17));
+	background-image:-khtml-linear-gradient(top,transparent,rgba(0,0,0,0.17));
+	background-image:-o-linear-gradient(top,transparent,rgba(0,0,0,0.17));
+	background-image:linear-gradient(top,transparent,rgba(0,0,0,0.17));
+}
+#numOfMessage:active{
+	margin-top:4px;
+	color:#777;
+	border:1px solid #999;
+	/*{Shadow}*/
+	box-shadow:inset 0 0 5px 0 #333;
+	-moz-box-shadow:inset 0 0 5px 0 #333;
+	-webkit-box-shadow:inset 0 1px 2px 0 #333, 0 1px 1px 0 #fff;
+}
+#logoutForm p {
+	float: right;
+	margin-right: 70px;
+	padding-bottom: 7px;
+	padding-left: 5px;
+	padding-right: 5px;
+	text-align: center;
+	border: outset 5px #E0E0E0;
+	border-radius: 20px;
+	background-color: #202020;
+	font-family: "Comic Sans MS", cursive, sans-serif;
+	color: #FFFF99;
+}
+#logoutForm p span {
+	font-size: 25px;
+}
+#logoutForm input {
+	/* Positioning */
+	float: right;
+	margin-top: 21px;
+	margin-right: 10px;
+	/* General Properties */
+  	height:34px;
+  	width:110px;
+  	border:1px solid #000;
+  	background:#717a77;
+  	 /* CSS3 Styling */
+  	background:-moz-linear-gradient(bottom, #0a0809, #0a0f0b 50%, #6d7673 50%, #afbdc0);
+  	background:-webkit-gradient(linear, left bottom, left top, from(#0a0809), to(#afbdc0), color-stop(0.5, #0a0f0b), color-stop(0.5, #6d7673));
+ 	 -moz-border-radius:20px;
+ 	 -webkit-border-radius:20px;
+ 	 border-radius:20px;
+ 	 -moz-box-shadow:0px 0px 7px rgba(255, 255,255, 0.5);
+ 	 -webkit-box-shadow:0px 0px 7px rgba(255, 255,255, 0.5);
+  	 box-shadow:0px 0px 7px rgba(255, 255,255, 0.5);
+  	 /* Text Styling */
+  	color:#ff7d00;
+ 	text-shadow:0px -1px 0px #000;
+  	font-family:'HighlandGothicFLFRegular', Impact, 'Arial Black', sans-serif;
+  	font-size:20px;
+  	padding-bottom:5px;
+}
+#logoutForm input:hover, #logoutForm input:focus {
+	border-color:#adbad9;
+	cursor: pointer;
+}
+#logoutForm input:active {
+	background:-moz-linear-gradient(bottom, #606c88, #3f4c6b);
+  	background:-webkit-gradient(linear, left bottom, left top, from(#606c88), to(#3f4c6b));
+  	text-shadow:0px 0px 2px #000;
+}
+body {
+	background-image: URL('../../images/concert.jpg');
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: 100% auto;
+	margin: 0;
+}
+#navigationBarHolder {
+	margin-top: 50px;
+	width: 100%;
+	height: 80px;
+	background-color: #A0A0A0;
+	overflow: hidden;
+}
+#navigationBar {
+	width: 80%;
+	height: 50px;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: black;
+	box-shadow: 0px 0px 15px 8px #FFFF99;
+}
+.menuItem {
+	text-decoration: none;
+	color: #E0E0E0;
+}
+#navigationBar li {
+	display: inline;
+	margin-left: 50px;
+	font-size: 20px;
+}
+.menuItem:hover {
+	color: white;
+}
+#firstItem {
+	margin-left: 150px;
+	text-decoration: none;
+	color: #E0E0E0;
+}
+#firstItem:hover {
+	color: white;
+}
+#logo {
+	position: absolute;
+	top: 20px;
+	left: 170px;
+	width: 150px; 
+}
+#cssmenu {
+	display: none;
+}
+@media only screen and (max-device-width: 1280px) {
+	#navigationBar li {
+		display: inline;
+		margin-left: 0;
+		background-color: rgba(215, 52, 36, 0.4);
+        background: rgba(215, 52, 36, 0.4);
+        color: rgba(215, 52, 36, 0.4);
+		font-size: 20px;
+	}
+	#logo {
+		position: absolute;
+		top: 20px;
+		left: 100px;
+		width: 150px;
+	}
+	#cssmenu {
+		display: none;
+	}
+}
+@media only screen and (max-device-width: 980px)  {
+	body {
+		background-attachment: fixed;
+		background-image: URL('/images/concert.jpg');
+		background-repeat: no-repeat;
+		background-size: 100% 1800px;
+		margin: 0;
+	}
+	#navigationBar {
+		display: none;
+	}
+	#messageBox {
+		float:left;
+		margin-left: 0;
+		margin-top: 5px;
+	}
+	#messageBox input {
+		height: 70px;
+	}
+	#cssmenu {
+		display: block;
+		float: right;
+  		padding: 0;
+ 		margin: 0;
+  		border: 0;
+  		line-height: 1;
+	}
+	#cssmenu ul,
+	#cssmenu ul li,
+	#cssmenu ul ul {
+		list-style: none;
+ 		margin: 0;
+  		padding: 0;
+	}
+	#cssmenu ul {
+  		position: relative;
+  		z-index: 597;
+  		float: left;
+	}
+	#cssmenu ul li {
+  		float: left;
+  		min-height: 1px;
+  		line-height: 1em;
+  		vertical-align: middle;
+  		position: relative;
+	}
+	#cssmenu ul li.hover,
+	#cssmenu ul li:hover {
+  		position: relative;
+  		z-index: 599;
+  		cursor: default;
+	}
+	#cssmenu ul ul {
+  		visibility: hidden;
+  		position: absolute;
+  		top: 100%;
+  		left: 0px;
+  		z-index: 598;
+  		width: 100%;
+	}
+	#cssmenu ul ul li {
+ 	 	float: none;
+	}
+	#cssmenu ul ul ul {
+ 		 top: -2px;
+ 		 right: 0;
+	}
+	#cssmenu ul li:hover > ul {
+  		visibility: visible;
+	}
+	#cssmenu ul ul {
+ 		top: 1px;
+  		left: 99%;
+	}
+	#cssmenu ul li {
+  		float: none;
+	}
+	#cssmenu ul ul {
+ 		margin-top: 1px;
+	}
+	#cssmenu ul ul li {
+  		font-weight: normal;
+	}
+	/* Custom CSS Styles */
+	#cssmenu {
+  		width: 200px;
+  		background: #333333;
+  		font-family: 'Oxygen Mono', Tahoma, Arial, sans-serif;
+  		zoom: 1;
+  		font-size: 20px;
+	}
+	#cssmenu:before {
+  		content: '';
+  		display: block;
+	}
+	#cssmenu:after {
+  		content: '';
+  		display: table;
+  		clear: both;
+	}
+	#cssmenu a {
+  		display: block;
+  		padding: 15px 20px;
+  		color: #ffffff;
+  		text-decoration: none;
+  		text-transform: uppercase;
+	}
+	#cssmenu > ul {
+  		width: 200px;
+	}
+	#cssmenu ul ul {
+  		width: 200px;
+	}
+	#cssmenu > ul > li > a {
+  		border-right: 4px solid #1b9bff;
+  		color: #ffffff;
+	}
+	#cssmenu > ul > li > a:hover {
+  		color: #ffffff;
+	}
+	#cssmenu > ul > li.active a {
+  		background: #1b9bff;
+	}
+	#cssmenu > ul > li a:hover,
+	#cssmenu > ul > li:hover a {
+  		background: #1b9bff;
+	}
+	#cssmenu li {
+  		position: relative;
+	}
+	#cssmenu ul ul li.first {
+  		-webkit-border-radius: 0 3px 0 0;
+ 		 -moz-border-radius: 0 3px 0 0;
+  		border-radius: 0 3px 0 0;
+	}
+	#cssmenu ul ul li.last {
+  		-webkit-border-radius: 0 0 3px 0;
+  		-moz-border-radius: 0 0 3px 0;
+  		border-radius: 0 0 3px 0;
+  		border-bottom: 0;
+	}
+	#cssmenu ul ul {
+  		-webkit-border-radius: 0 3px 3px 0;
+  		-moz-border-radius: 0 3px 3px 0;
+  		border-radius: 0 3px 3px 0;
+	}
+	#cssmenu ul ul {
+  		border: 1px solid #0082e7;
+	}
+	#cssmenu ul ul a {
+  		font-size: 12px;
+  		color: #ffffff;
+	}
+	#cssmenu ul ul a:hover {
+  		color: #ffffff;
+	}
+	#cssmenu ul ul li {
+  		border-bottom: 1px solid #0082e7;
+	}
+	#cssmenu ul ul li:hover > a {
+  		background: #4eb1ff;
+  		color: #ffffff;
+	}
+#cssmenu.align-right > ul > li > a {
+  border-left: 4px solid #1b9bff;
+  border-right: none;
+}
+#cssmenu.align-right {
+  float: right;
+}
+#cssmenu.align-right li {
+  text-align: right;
+}
+#cssmenu.align-right ul ul {
+  visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: -100%;
+  z-index: 598;
+  width: 100%;
+}
+#cssmenu.align-right ul ul li.first {
+  -webkit-border-radius: 3px 0 0 0;
+  -moz-border-radius: 3px 0 0 0;
+  border-radius: 3px 0 0 0;
+}
+#cssmenu.align-right ul ul li.last {
+  -webkit-border-radius: 0 0 0 3px;
+  -moz-border-radius: 0 0 0 3px;
+  border-radius: 0 0 0 3px;
+}
+#cssmenu.align-right ul ul {
+  -webkit-border-radius: 3px 0 0 3px;
+  -moz-border-radius: 3px 0 0 3px;
+  border-radius: 3px 0 0 3px;
+}
+}
